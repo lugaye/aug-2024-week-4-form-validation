@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Introduction to JavaScript</title>
+            <!-- 3. external javascript file -->
+            
+            <!-- 2. internal javascript -->
+            <script>
+                ///javascript code here
+            </script>
+            <style>
+                form {
+                    width: 400px;
+                    margin: auto;
+                }
+
+                label, input {
+                    display: block;
+                    margin: 0 0 10px 0;
+                }
+
+                .error {
+                    color:red;
+                    font-size: 12px;
+                }
+
+            </style>
+        </head>
+        <body>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" >
+                <span id="nameError" class="error"></span>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" >
+                <span id="emailError" class="error"></span>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" >
+                <span id="passwordError" class="error"></span>
+                
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age" >
+                <span id="ageError" class="error"></span>
+
+                <input type="submit" value="Register">
+            </form>
+            <script src="script.js"></script>
+        </body>
+    </html>
